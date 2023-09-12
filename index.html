@@ -1,1 +1,40 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Form</title>
+    <!-- Include a datepicker library, e.g., jQuery UI Datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            // Enable datepicker for the "Geboortedatum" field
+            $( "#geboortedatum" ).datepicker();
+        } );
+    </script>
+</head>
+<body>
+    <h1>Web Form</h1>
+    <form action="submit.php" method="post">
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required><br><br>
+        
+        <label for="geslacht">Geslacht:</label>
+        <select id="geslacht" name="geslacht" required>
+            <option value="Jongen">Jongen</option>
+            <option value="Meisje">Meisje</option>
+        </select><br><br>
+        
+        <label for="lengte">Lengte:</label>
+        <input type="text" id="lengte" name="lengte" required><br><br>
+        
+        <label for="gewicht">Gewicht:</label>
+        <input type="text" id="gewicht" name="gewicht" required><br><br>
+        
+        <label for="geboortedatum">Geboortedatum:</label>
+        <input type="text" id="geboortedatum" name="geboortedatum" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
