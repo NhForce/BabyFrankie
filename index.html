@@ -22,65 +22,43 @@
 
 </head>
 <body>
-    <h1>Web Form</h1>
+    <h1>Waag een gokje</h1>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<input type=hidden name="oid" value="00D2o000000hdNM">
-<input type=hidden name="retURL" value="https://nhforce.github.io/BabyFrankie/">
+    <input type=hidden name="oid" value="00D2o000000hdNM">
+    <input type=hidden name="retURL" value="https://nhforce.github.io/BabyFrankie/">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail" value="info@thechain.be">        -->
-<!--  ----------------------------------------------------------------------  -->
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="info@thechain.be">        -->
+    <!--  ----------------------------------------------------------------------  -->
 
-<label for="first_name">Voornaam: </label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    <label for="first_name">Voornaam: </label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
 
-<label for="last_name">Achternaam: </label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    <label for="last_name">Achternaam: </label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-<label for="email">Emailadres: </label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    <label for="email">Emailadres: </label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-Naam:<input  id="00N2o000008Yvth" maxlength="50" name="00N2o000008Yvth" size="20" type="text" /><br>
+    Naam:<input  id="00N2o000008Yvth" maxlength="50" name="00N2o000008Yvth" size="20" type="text" /><br>
 
-Geslacht:<select  id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht"><option value=""></option><option value="Jongen">Jongen</option>
-<option value="Meisje">Meisje</option>
-</select><br>
+    Geslacht:<select  id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht"><option value=""></option><option value="Jongen">Jongen</option>
+    <option value="Meisje">Meisje</option>
+    </select><br>
 
-Lengte:<input  id="00N2o000008Yvtm" name="00N2o000008Yvtm" size="20" type="text" /><br>
+    Lengte:<input  id="00N2o000008Yvtm" name="00N2o000008Yvtm" size="20" type="text" /><br>
 
-Gewicht:<input  id="00N2o000008Yvtr" name="00N2o000008Yvtr" size="20" type="text" /><br>
+    Gewicht:<input  id="00N2o000008Yvtr" name="00N2o000008Yvtr" size="20" type="text" /><br>
 
-Geboortedatum:<span class="dateInput dateOnlyInput"><input  id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" /></span><br>
+    Geboortedatum:<span class="dateInput dateOnlyInput"><input  id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" /></span><br>
 
-<input type="submit" name="submit">
+    <input type="submit" name="submit">
 
-</form>
-
-    <form action="submit.php" method="post">
-        <label for="naam">Naam:</label>
-        <input type="text" id="naam" name="naam" required><br><br>
-        
-        <label for="geslacht">Geslacht:</label>
-        <select id="geslacht" name="geslacht" required>
-            <option value="Jongen">Jongen</option>
-            <option value="Meisje">Meisje</option>
-        </select><br><br>
-        
-        <label for="lengte">Lengte:</label>
-        <input type="text" id="lengte" name="lengte" required><br><br>
-        
-        <label for="gewicht">Gewicht:</label>
-        <input type="text" id="gewicht" name="gewicht" required><br><br>
-        
-        <label for="geboortedatum">Geboortedatum:</label>
-        <input type="text" id="geboortedatum" name="geboortedatum" required><br><br>
-        
-        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
