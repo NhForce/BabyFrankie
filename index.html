@@ -20,32 +20,7 @@
 	<script src="JScript/jquery-1.12.4.js"></script>
 
 	<script src="JScript/jquery-ui.js"></script>
-    <!--
 
-	<script>
-
-	$( function() {
-
-		$( "#.datepicker" ).datepicker();
-
-	} );
-
-</script>
-<script>
-
-function copy()
-
-{
-
-    var n1 = document.getElementById("datepicker");
-
-    var n2 = document.getElementById("00N0j000000QYzw");
-
-    n2.value = n1.value;
-
-}
-
-</script> -->
     <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -138,7 +113,8 @@ function copy()
                 </div>
               <div class='pets-birthday'>
                 <label for='pets-birthday'>Geboortedatum</label>
-                <input id="datepicker" name="datepicker" size="12" type="text" placeholder='DD/MM/YYYY'>
+                <input id="datepicker" size="12" type="text" placeholder='DD/MM/YYYY'>
+                <input  id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" style="display:none;"/><br>
               </div>
             </div>
             <div class='set'>
@@ -188,5 +164,13 @@ function copy()
             });
           });
       </script>      
+      <script>
+        function copy()
+            {
+                var n1 = document.getElementById("datepicker");
+                var n2 = document.getElementById("00N0j000000QYzw");
+                n2.value = n1.value;
+            }
+      </script>
 </body>
 </html>
