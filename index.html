@@ -20,6 +20,7 @@
 	<script src="JScript/jquery-1.12.4.js"></script>
 
 	<script src="JScript/jquery-ui.js"></script>
+    <!--
 
 	<script>
 
@@ -44,7 +45,7 @@ function copy()
 
 }
 
-</script>
+</script> -->
     <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -177,5 +178,15 @@ function copy()
         </div>
       </div>
       </form>
+      <script>
+        $(document).ready(function() {
+            $("#datepicker").datepicker({
+              dateFormat: "dd-mm-yyyy", // Change date format
+              showButtonPanel: true,  // Show a button panel with "Today" and "Done" buttons
+              minDate: 0,            // Set a minimum date (0 means today)
+              maxDate: "+10M",        // Set a maximum date (1 month from today)
+            });
+          });
+      </script>      
 </body>
 </html>
