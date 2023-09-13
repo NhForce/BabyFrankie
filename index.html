@@ -5,12 +5,46 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            // Enable datepicker for the "Geboortedatum" field
-            $( "#geboortedatum" ).datepicker();
-        } );
-    </script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<link rel="stylesheet" href="/resources/demos/style.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="JScript/jquery-ui.css">
+
+	<link rel="stylesheet" href="JScript/style.css">
+
+	<script src="JScript/jquery-1.12.4.js"></script>
+
+	<script src="JScript/jquery-ui.js"></script>
+
+	<script>
+
+	$( function() {
+
+		$( "#.datepicker" ).datepicker();
+
+	} );
+
+</script>
+<script>
+
+function copy()
+
+{
+
+    var n1 = document.getElementById("datepicker");
+
+    var n2 = document.getElementById("00N0j000000QYzw");
+
+    n2.value = n1.value;
+
+}
+
+</script>
     <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -26,7 +60,7 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onClick="copy()">
 
     <input type=hidden name="oid" value="00D2o000000hdNM">
     <input type=hidden name="retURL" value="https://nhforce.github.io/BabyFrankie/">
@@ -103,7 +137,7 @@
                 </div>
               <div class='pets-birthday'>
                 <label for='pets-birthday'>Geboortedatum</label>
-                <input id="geboortedatum" name="00N2o000008Yvu1" size="12" type="text" placeholder='DD/MM/YYYY'>
+                <input id="datepicker" size="12" type="text" placeholder='DD/MM/YYYY'>
               </div>
             </div>
             <div class='set'>
