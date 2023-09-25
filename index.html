@@ -1,173 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Include a datepicker library, e.g., jQuery UI Datepicker -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-	<link rel="stylesheet" href="/resources/demos/style.css">
-
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-	<link rel="stylesheet" href="JScript/jquery-ui.css">
-
-	<link rel="stylesheet" href="JScript/style.css">
-
-	<script src="JScript/jquery-1.12.4.js"></script>
-
-	<script src="JScript/jquery-ui.js"></script>
-
-    <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Baby Frankie</h1>
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
-
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onClick="copy()">
-
-    <input type=hidden name="oid" value="00D2o000000hdNM">
-    <input type=hidden name="retURL" value="https://nhforce.github.io/BabyFrankie/">
-
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail" value="info@thechain.be">        -->
-<!--
-
-    <label for="first_name">Voornaam: </label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-
-    <label for="last_name">Achternaam: </label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-
-    <label for="email">Emailadres: </label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-    <br>
-
-    Naam:<input  id="00N2o000008Yvth" maxlength="50" name="00N2o000008Yvth" size="20" type="text" /><br>
-
-    Geslacht:<select  id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht"><option value=""></option><option value="Jongen">Jongen</option>
-    <option value="Meisje">Meisje</option>
-    </select><br>
-
-    Lengte:<input  id="00N2o000008Yvtm" name="00N2o000008Yvtm" size="20" type="text" /><br>
-
-    Gewicht:<input  id="00N2o000008Yvtr" name="00N2o000008Yvtr" size="20" type="text" /><br>
-
-    Geboortedatum:<span class="dateInput dateOnlyInput"><input  id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" /></span><br>
-
-    <br>
-
-    <input type="submit" name="submit">
-
-    </form>
-
-
-  -->
-
-
-    <div class='signup-container'>
-        <div class='left-container'>
-          <h1>
-            <i class='fas fa-paw'></i>
-            Baby Frankie
-          </h1>
+    <div class="signup-container">
+        <div class="left-container">
+            <img src="baby_image.jpg" alt="Cute Baby Image">
+            <h1>
+                <i class="fas fa-baby"></i>
+                Baby Frankie
+            </h1>
         </div>
-        <div class='right-container'>
-          <header>
-            <h1>Waag een gokje</h1>
-            <div class='set'>
-              <div class='pets-name'>
-                <label for='pets-name'>Naam</label>
-                <input id="00N2o000008Yvth" maxlength="50" name="00N2o000008Yvth" size="20" type="text" placeholder="">
-              </div>
-            </div>
-            <div class='set'>
-                <div class='pets-gender'>
-                    <label for='pet-gender-female'>Geslacht</label>
-                    <div class='radio-container'>
-                        <!--
-                      <input checked='' id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht" type='radio' value='Jongen'>
-                      <label for='pet-gender-female'>Jongen</label>
-                      <input id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht" type='radio' value='Meisje'>
-                      <label for='pet-gender-male'>Meisje</label>
-                    -->
-                    <select  id="00N2o000008Yvtw" name="00N2o000008Yvtw" title="Geslacht">
-                        <option value="" type="radio"></option>
-                        <option value="Jongen" type="radio">Jongen</option>
-                        <option value="Meisje" type="radio">Meisje</option>
-                    </select>
+        <div class="right-container">
+            <header>
+                <h1>Waag een gokje</h1>
+                <div class="set">
+                    <div class="pets-name">
+                        <label for="pets-name">Naam</label>
+                        <input id="00N2o000008Yvth" maxlength="50" name="00N2o000008Yvth" size="20" type="text" placeholder="">
                     </div>
                 </div>
-              <div class='pets-birthday'>
-                <label for='pets-birthday'>Geboortedatum</label>
-                <input id="datepicker" size="12" type="text" placeholder='DD/MM/YYYY'>
-                <input id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" style="display:none;"/><br>
-              </div>
-            </div>
-            <div class='set'>
-                <div class='pets-name'>
-                    <label for='baby-lengte'>Lengte</label>
-                    <input id="00N2o000008Yvtm" name="00N2o000008Yvtm" size="20" type="text" placeholder="cm">
+                <div class="set">
+                    <div class="pets-gender">
+                        <label for="pet-gender">Geslacht</label>
+                        <div class="radio-container">
+                            <input checked="" id="boy" name="gender" type="radio" value="Jongen">
+                            <label for="boy"><i class="fas fa-bowling-ball"></i> Jongen</label>
+                            <input id="girl" name="gender" type="radio" value="Meisje">
+                            <label for="girl"><i class="fas fa-ribbon"></i> Meisje</label>
+                        </div>
+                    </div>
+                    <div class="pets-birthday">
+                        <label for="pets-birthday">Geboortedatum</label>
+                        <input id="datepicker" size="12" type="text" placeholder="DD/MM/YYYY">
+                        <input id="00N2o000008Yvu1" name="00N2o000008Yvu1" size="12" type="text" style="display:none;"/>
+                    </div>
                 </div>
-                <div class='pets-name'>
-                    <label for='baby-gewicht'>Gewicht</label>
-                    <input id="00N2o000008Yvtr" name="00N2o000008Yvtr" size="20" placeholder="g" type='text'>
-                  </div>
-            </div>
-            <br>
-            <h1>Deze poging komt van: </h1>
-            <div class='set'>
-                <div class='pets-name'>
-                  <label for='submitter-name'>Voornaam</label>
-                  <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="">
+                <div class="set">
+                    <div class="pets-name">
+                        <label for="baby-lengte">Lengte</label>
+                        <input id="00N2o000008Yvtm" name="00N2o000008Yvtm" size="20" type="text" placeholder="cm">
+                    </div>
+                    <div class="pets-name">
+                        <label for="baby-gewicht">Gewicht</label>
+                        <input id="00N2o000008Yvtr" name="00N2o000008Yvtr" size="20" placeholder="g" type="text">
+                    </div>
                 </div>
-                <div class='pets-name'>
-                    <label for='submitter-lastname'>Achternaam</label>
-                    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="">
+                <br>
+                <h1>Deze poging komt van:</h1>
+                <div class="set">
+                    <div class="pets-name">
+                        <label for="submitter-name">Voornaam</label>
+                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="">
+                    </div>
+                    <div class="pets-name">
+                        <label for="submitter-lastname">Achternaam</label>
+                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="">
+                    </div>
                 </div>
-            </div>
-            <div class='set'>
-                <div class='pets-name'>
-                  <label for='submitter-email'>Emailadres</label>
-                  <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="">
+                <div class="set">
+                    <div class="pets-name">
+                        <label for="submitter-email">Emailadres</label>
+                        <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="">
+                    </div>
                 </div>
-            </div>
-          </header>
-          <footer>
-            <div class='set'>
-              <button type="submit" name="submit">Versturen</button>
-            </div>
-          </footer>
+            </header>
+            <footer>
+                <div class="set">
+                    <button type="submit" name="submit">Versturen</button>
+                </div>
+            </footer>
         </div>
-      </div>
-      </form>
-      <script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
         $(document).ready(function() {
             $("#datepicker").datepicker({
-              dateFormat: "dd/mm/yy", // Change date format
-              showButtonPanel: true,  // Show a button panel with "Today" and "Done" buttons
-              minDate: 0,            // Set a minimum date (0 means today)
-              maxDate: "+10M",        // Set a maximum date (1 month from today)
+                dateFormat: "dd/mm/yy",
+                showButtonPanel: true,
+                minDate: 0,
+                maxDate: "+10M",
             });
-          });
-      </script>      
-      <script>
-        function copy()
-            {
-                document.getElementById("00N2o000008Yvu1").value = document.getElementById("datepicker").value
-            }
-      </script>
+        });
+    </script>
 </body>
 </html>
