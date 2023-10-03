@@ -147,7 +147,7 @@
           </header>
           <footer>
             <div class='set'>
-              <button type="submit" name="submit" onsubmit="EnquireButton()">Versturen</button>
+              <button type="submit" name="submit" onsubmit="myFunction()">Versturen</button>
             </div>
           </footer>
         </div>
@@ -168,6 +168,9 @@
             {
                 document.getElementById("00N2o000008Yvu1").value = document.getElementById("datepicker").value
             }
+        function myFunction() {
+          alert("Bedankt voor je inzending!");
+        }
       </script>
 </body>
 </html>
